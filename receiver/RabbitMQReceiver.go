@@ -7,7 +7,8 @@ import (
 )
 
 /***
-This GO file is used to read data from test.csv and send  it to Queue "GoQueue" .
+This GO file is used to fetch data from Queue "GoQueue" .
+The receiver keep on listening any incoming data on "GoQueue"
  */
 
 func failOnError(err error, msg string) {
